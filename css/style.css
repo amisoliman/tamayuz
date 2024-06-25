@@ -121,7 +121,12 @@ p {
 }
 
 .header_area_text h2 {
-  font-size: 50px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.header_area_text h3 {
+  font-size: 20px;
   color: #fff;
 }
 
@@ -143,6 +148,36 @@ p {
 
 #features_area p {
   margin-bottom: 80px;
+}
+
+.single_feature {
+  border: 2px solid #f2f2f2;
+  padding: 10px;
+}
+
+.single_feature h3 {
+  margin-top: 35px;
+}
+
+.single_feature i {
+  background: #36c36e;
+  font-size: 25px;
+  padding: 20px;
+  color: #fff;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  padding-top: 17px;
+  position: absolute;
+  top: -17%;
+  left: 44%;
+}
+
+/************** Partners area css ******************/
+
+#partners_area h2 {
+  margin-bottom: 40px;
 }
 
 .single_feature {
