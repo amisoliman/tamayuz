@@ -90,6 +90,7 @@
                     <li><a href="#features_area">Home</a></li>
                     <li><a href="#story_area">Service</a></li>
                     <li><a href="#Products_area">Products</a></li>
+                    <li><a href="#partners_area">Partners</a></li>
                     <li><a href="#footer_area">Contact</a></li>
                   </ul>
                 </div>
@@ -100,13 +101,13 @@
         <div class="row">
           <div class="col-md-12">
             <div class="header_area_text">
-              <h2 class="wow slideInDown" data-wow-duration="2s">
-                Tamayuz<br />Innovation of HVAC & Energy Engineering Solution's 
+              <h2 class="wow slideInDown" data-wow-duration="0.5s">
+                Tamayuz Integrated Company
               </h2>
-              <!-- <p class="wow slideInUp">
+              <h3 class="wow slideInUp">
                 Innovation of HVAC & Energy Engineering Solution's 
-              </p> -->
-              <a class="wow slideInUp" data-wow-duration="2s" href="mailto:hussain@tamyuzco.com" target="_blank">Contact us</a>
+              </h3>
+              <a class="wow slideInUp" data-wow-duration="1s" href="mailto:hussain@tamyuzco.com" target="_blank">Contact us</a>
             </div>
           </div>
         </div>
@@ -143,7 +144,7 @@
             </div>
           </div>
           <div class="col-sm-6">
-            <div class="single_feature wow slideInUp" data-wow-duration="2s">
+            <div class="single_feature wow slideInUp" data-wow-duration="1s">
               <i class="fa fa-flag"></i>
               <h3>Vision</h3>
               <p>
@@ -160,12 +161,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="story_image wow slideInLeft" data-wow-duration="2s">
+            <div class="story_image wow slideInLeft" data-wow-duration="1s">
               <img src="images/sevrice.jpg" alt="sevrices" />
             </div>
           </div>
           <div class="col-md-6">
-            <div class="story_text wow slideInRight" data-wow-duration="2s">
+            <div class="story_text wow slideInRight" data-wow-duration="1s">
               <h2>Service & Retrofit</h2>
               
               
@@ -186,12 +187,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="story_image wow slideInLeft" data-wow-duration="2s">
+            <div class="story_image wow slideInLeft" data-wow-duration="1s">
               <img src="images/product.jpg" alt="products" />
             </div>
           </div>
           <div class="col-md-6">
-            <div class="story_text wow slideInRight" data-wow-duration="2s">
+            <div class="story_text wow slideInRight" data-wow-duration="1s">
               <h2>Products</h2>
               
                 <div class="icons-section"><i class="fa-solid fa-circle-check"></i><p>Air Filtrations Elements & Systems.</p></div>
@@ -212,11 +213,11 @@
 
    
 
-    <section id="features_area" class="section_padding text-center">
+    <section id="partners_area" class="section_padding text-center">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h2>Parteners</h2>
+            <h2>Partners</h2>
             
           </div>
           
@@ -254,13 +255,13 @@
         </div>
       </div>
     </section>
-    <!-- end blog area -->
+    <!-- end partners_area area -->
 
     <section id="caal_to_action_area">
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
-            <div class="call_to_action_text wow slideInLeft" data-wow-duration="2s">
+            <div class="call_to_action_text wow slideInLeft" data-wow-duration="1s">
               <h2>Are you ready to go?</h2>
               <p>
                 Tamayuz Integrated Company dedicated to delivering technically superior, high-quality, and cost-effective products and services, we invite you to contact us. Unlock opportunities that add substantial value to your projects and contribute significantly to your success. We look forward to collaborating with you to achieve your goals.
@@ -268,7 +269,7 @@
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="call_project text-right wow slideInRight" data-wow-duration="2s">
+            <div class="call_project text-right wow slideInRight" data-wow-duration="1s">
               <a href="mailto:hussain@tamyuzco.com" target="_blank">Contact us</a>
             </div>
           </div>
@@ -312,5 +313,25 @@
 
     <!-- main js -->
     <script src="js/main.js"></script>
+    <script>
+      
+        $(document).ready(function () {
+            $("a").on("click", function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $("html, body").animate(
+                {
+                    scrollTop: $(hash).offset().top,
+                },
+                700,
+                function () {
+                    window.location.hash = hash;
+                }
+                );
+            }
+            });
+        });
+    </script>
   </body>
 </html>
